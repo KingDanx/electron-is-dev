@@ -1,4 +1,4 @@
-import electron from 'electron';
+const electron = require('electron');
 
 if (typeof electron === 'string') {
 	throw new TypeError('Not running in an Electron environment!');
@@ -10,4 +10,4 @@ const getFromEnv = Number.parseInt(env.ELECTRON_IS_DEV, 10) === 1;
 
 const isDev = isEnvSet ? getFromEnv : !electron.app.isPackaged;
 
-export default isDev;
+module.exports = isDev;
