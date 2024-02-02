@@ -26,6 +26,8 @@ if (isDev) {
 }
 ```
 
+## I forked to add commonJS module support here
+
 ```js
 const isDev = require('@kingdax/electron-is-dev');
 
