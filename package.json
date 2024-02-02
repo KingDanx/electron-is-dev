@@ -1,9 +1,9 @@
 {
 	"name": "electron-is-dev",
-	"version": "3.0.1",
+	"version": "3.1.1",
 	"description": "Check if Electron is running in development",
 	"license": "MIT",
-	"repository": "sindresorhus/electron-is-dev",
+	"repository": "kingdanx/electron-is-dev",
 	"funding": "https://github.com/sponsors/sindresorhus",
 	"author": {
 		"name": "Sindre Sorhus",
@@ -11,9 +11,13 @@
 		"url": "https://sindresorhus.com"
 	},
 	"exports": {
-		"types": "./index.d.ts",
-		"default": "./index.js"
+		"./index.js": "./index.cjs",
+		"./index.mjs": "./index.mjs",
+		"./index.d.ts": "./index.d.ts"
 	},
+	"main": "index.cjs",
+	"module": "index.mjs",
+	"types": "./index.d.ts",
 	"sideEffects": false,
 	"engines": {
 		"node": ">=18"
@@ -23,7 +27,8 @@
 	},
 	"files": [
 		"index.js",
-		"index.d.ts"
+		"index.d.ts",
+		"index.mjs"
 	],
 	"keywords": [
 		"electron",
@@ -40,5 +45,8 @@
 	"devDependencies": {
 		"tsd": "^0.30.3",
 		"xo": "^0.56.0"
+	},
+	"dependencies": {
+		"electron": "^28.2.1"
 	}
 }
