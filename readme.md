@@ -17,7 +17,17 @@ npm install @kingdanx/electron-is-dev
 ## Usage
 
 ```js
-import isDev from 'electron-is-dev';
+import isDev from '@kingdanx/electron-is-dev';
+
+if (isDev) {
+	console.log('Running in development');
+} else {
+	console.log('Running in production');
+}
+```
+
+```js
+const isDev = require('@kingdax/electron-is-dev');
 
 if (isDev) {
 	console.log('Running in development');
