@@ -1,9 +1,12 @@
 {
-	"name": "electron-is-dev",
+	"name": "@kingdanx/electron-is-dev",
 	"version": "3.1.1",
 	"description": "Check if Electron is running in development",
 	"license": "MIT",
-	"repository": "kingdanx/electron-is-dev",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/kingdanx/electron-is-dev.git"
+	},
 	"original-repository": "sindresorhus/electron-is-dev",
 	"funding": "https://github.com/sponsors/sindresorhus",
 	"original-author": {
