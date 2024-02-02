@@ -9,7 +9,7 @@ This package must be used from the Electron main process.
 ## Install
 
 ```sh
-npm install electron-is-dev
+npm install @kingdanx/electron-is-dev
 ```
 
 *Requires Electron 28 or later.*
@@ -52,6 +52,6 @@ console.log(globalThis.isDev);
 ```
 
 ## Related
-
+- [electron-is-dev](https://github.com/sindresorhus/electron-is-dev) - The original package this one was forked from
 - [electron-util](https://github.com/sindresorhus/electron-util) - Useful utilities for developing Electron apps
 - [electron-debug](https://github.com/sindresorhus/electron-debug) - Adds useful debug features to your Electron app
