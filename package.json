@@ -4,11 +4,16 @@
 	"description": "Check if Electron is running in development",
 	"license": "MIT",
 	"repository": "kingdanx/electron-is-dev",
+	"original-repository": "sindresorhus/electron-is-dev",
 	"funding": "https://github.com/sponsors/sindresorhus",
-	"author": {
+	"original-author": {
 		"name": "Sindre Sorhus",
 		"email": "sindresorhus@gmail.com",
 		"url": "https://sindresorhus.com"
+	},
+	"author": {
+		"name": "Dan Prudhomme Jr",
+		"email": "dannyprud@gmail.com"
 	},
 	"exports": {
 		"./index.js": "./index.cjs",
